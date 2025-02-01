@@ -1,0 +1,92 @@
+:root {
+    --bgColor-default: #fff;
+    --borderColor-default: #202020;
+    --bgColor-darker: #f6f8fa;
+    --purple: #6B62FF;
+    --lighter-purple: #6B77FF;
+    --teal: #008F8C;
+    --lighter-teal: #00AFAA;
+
+  }
+  
+  *, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+ 
+  }
+  
+  h1 {
+    color: white;
+    font-size: 24px;
+  }
+
+  .calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 180px;;
+    background-color: #202020;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .screen {
+    height: 30px;
+    width: 155px;
+    border-radius: 5px;
+    border: 1px solid var(--borderColor-default);
+    padding: 5px;
+    background-color: #f6f8fa;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+
+  .buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 160px;
+    height: auto;
+    margin: 1px;
+  }
+
+  button {
+    height: 30px;
+    width: 50px;
+    background-color: var(--purple);
+    border-radius: 5px;
+    border: 1px solid var(--lighter-purple);
+  }
+
+  .numbers button {
+    height: 30px;
+    width: 50px;
+    background-color: var(--teal);
+    border-radius: 5px;
+    border: 1px solid var(--lighter-teal);
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: var(--lighter-purple);
+  }
+
+  .numbers button:hover {
+    cursor: pointer;
+    background-color: var(--lighter-teal);
+  }
+  
+ 
+
+
+  
+  
